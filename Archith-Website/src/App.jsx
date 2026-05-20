@@ -5,29 +5,134 @@ import GitHubImg from './assets/GitHub.png';
 import LinkedInImg from './assets/linkedin.png';
 const userData = {
   name: "Archith Manduva",
-  role: "Student",
+  role: "Student Developer & CS Educator",
   school: "Seven Lakes High School",
   location: "Katy, TX",
   github: "https://github.com/ArchithM",
   linkedin: "https://www.linkedin.com/in/archith-manduva-54016233a/",
-  resumePath: "/resume.pdf", 
-  profilePic: "https://via.placeholder.com/150", 
-  
-  about: "Placeholder",
-  
-  techStack: ["Node.js", "Java", "Python", "Arduino", "SQL", "React"],
-  
-  projects: [
-    { title: "Project One", description: "Placeholder", link: "#" },
-  ],
-  
-  experience: [
-    { organization: "Placeholder", role: "Placeholder", date: "Summer 2023" },
+  resumePath: "/resume.pdf",
+  profilePic: "https://via.placeholder.com/150",
 
+  about:
+    "High school student passionate about computer science, machine learning, and education. I enjoy building software projects, exploring systems-level programming, and applying AI and data science to real-world problems. Outside of programming, I help teach younger students through MECCLab and mentor peers in competitive programming and robotics.",
+
+  techStack: [
+    "Python",
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Node.js",
+    "Arduino",
+    "SQL",
+    "PyTorch",
+    "scikit-learn",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Flask",
+    "Git",
+    "HTML/CSS",
+    "R"
   ],
-  
+
+  projects: [
+    {
+      title: "PyMorph",
+      description:
+        "A programming language built on top of Python focused on experimentation with language design and developer tooling.",
+      link: "https://github.com/ArchithM"
+    },
+    {
+      title: "SimpleGit",
+      description:
+        "A simplified Git GUI designed to make version control more accessible and intuitive for developers.",
+      link: "https://github.com/ArchithM"
+    },
+    {
+      title: "Linux Emulator on Windows",
+      description:
+        "Systems-level project exploring operating system behavior and Linux-style environments on Windows.",
+      link: "https://github.com/ArchithM"
+    },
+    {
+      title: "Hurricane Property Value Analysis",
+      description:
+        "Used Random Forests and XGBoost models to analyze the financial impact of hurricanes on Gulf Coast property values using FEMA, HURDAT2, and Harris County datasets.",
+      link: "#"
+    },
+    {
+      title: "Dynamic Graph Algorithms Research",
+      description:
+        "Researched how predictive models can improve dynamic graph algorithms during the UC San Diego FinDS program, with applications in routing and disease tracking.",
+      link: "#"
+    },
+    {
+      title: "Brain Tumor Detection ML Model",
+      description:
+        "Built a machine learning model during Harvard LINC Camp to identify brain tumors from neuroscience imaging data.",
+      link: "#"
+    }
+  ],
+
+  experience: [
+    {
+      organization: "MECCLab",
+      role: "Co-founder & Computer Science Co-Lead",
+      date: "2025 - Present"
+    },
+    {
+      organization: "FIRST Robotics Club",
+      role: "Programming Director",
+      date: "2026 - Present"
+    },
+    {
+      organization: "Computer Science Club",
+      role: "Competitive Programming Co-Lead",
+      date: "2026 - Present"
+    },
+    {
+      organization: "HackClub",
+      role: "Co-founder & Captain",
+      date: "2025 - Present"
+    },
+    {
+      organization: "Houston Museum of Natural Science",
+      role: "SciTeen Mentor",
+      date: "2025"
+    },
+    {
+      organization: "Best in Class Education Center",
+      role: "Teacher's Assistant",
+      date: "2023 - 2024"
+    }
+  ],
+
   awards: [
-    { title: "Placeholder", date: "2023" },
+    {
+      title: "USACO Gold Division",
+      date: "2025"
+    },
+    {
+      title: "Climate Resilience Award - Modeling the Future Challenge",
+      date: "2026"
+    },
+    {
+      title: "Presidential Volunteer Service Award (Gold)",
+      date: "2024"
+    },
+    {
+      title: "AP Scholar with Distinction",
+      date: "2025"
+    },
+    {
+      title: "UIL District-19 Computer Science Written - 1st Place",
+      date: "2026"
+    },
+    {
+      title: "Oracle Certified Associate, Java SE 8 Programmer",
+      date: "2024"
+    }
   ]
 };
 
@@ -117,7 +222,7 @@ function App() {
         </section>
 
         <section className="section">
-          <h3>Experience & Extracurriculars</h3>
+          <h3>Leadership & Experience</h3>
           <div className="list-container">
             {userData.experience.map((exp, i) => (
               <div key={i} className="list-item flex-row">
