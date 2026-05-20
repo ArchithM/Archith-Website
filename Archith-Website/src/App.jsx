@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 import { Code2, Globe, Download, MapPin, GraduationCap } from 'lucide-react';
 import './App.css';
-
+import GitHubImg from './assets/GitHub.png';
+import LinkedInImg from './assets/linkedin.png';
 const userData = {
   name: "Archith Manduva",
   role: "Student",
@@ -80,8 +81,8 @@ function App() {
             </div>
 
             <div className="social-links">
-              <a href={userData.github} target="_blank" rel="noreferrer" aria-label="GitHub"><Code2 size={20} /></a>
-              <a href={userData.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn"><Globe size={20} /></a>
+              <a href={userData.github} target="_blank" rel="noreferrer" aria-label="GitHub"><img src={GitHubImg} width = {20} height={20} alt="GitHub" /></a>
+              <a href={userData.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn"><img src={LinkedInImg} width={20} height={20} alt="LinkedIn" /></a>
               <a href={userData.resumePath} download className="resume-btn"><Download size={16} /> Resume</a>
             </div>
           </div>
